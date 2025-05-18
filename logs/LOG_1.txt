@@ -1,0 +1,92 @@
+ Welcome to Skyjo, a terminal implementation!
+ Enter the number of players (2-8 players): Player 1, choose two cards to reveal 
+
+
+Enter a row: Enter a column: Player 1, your hand looks like this:
+
+
+
+11 * * * 
+* * * * 	 Card on Table: -1
+* * * * 
+
+
+
+Player 2, choose two cards to reveal 
+
+
+Enter a row: Enter a column: Player 2, your hand looks like this:
+
+
+
+0 * * * 
+* * * * 	 Card on Table: -1
+* * * * 
+
+
+
+Player 1, choose two cards to reveal 
+
+
+Enter a row: Enter a column: Player 1, your hand looks like this:
+
+
+
+11 6 * * 
+* * * * 	 Card on Table: -1
+* * * * 
+
+
+
+Player 2, choose two cards to reveal 
+
+
+Enter a row: Enter a column: Player 2, your hand looks like this:
+
+
+
+0 4 * * 
+* * * * 	 Card on Table: -1
+* * * * 
+
+
+
+Player First To Play: 1
+
+
+
+Player 1 , your turn!
+Your hand looks like this: 
+
+
+
+
+
+11 6 * * 
+* * * * 	 Card on Table: -1
+* * * * 
+
+
+
+ 
+
+
+ Enter 'u' to draw from the Face down pile, enter 'd' to pick up the card on the table
+You have drawn 5
+ What do you want to do ?
+
+Enter 'k' to keep and 'd' to drop 
+You have chosen to keep a 5
+Where do you want to place it ?
+Enter row: Enter column: You have dropped a 6
+Player 1 your hand looks like this:
+
+
+
+11 6 5 * 
+* * * * 	 Card on Table: 6
+* * * * 
+
+
+
+Game ended :)

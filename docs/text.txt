@@ -1,0 +1,60 @@
+So far we have implemented 
+the deck as a 150 element vector.
+
+Correct behavior: face down deck can be drawn upon from players.
+
+The hand of a player is for the instance implemented 
+as a array<int,12>. The objective for now will be to:
+
+1. Change the layout into a 3 x 4 matrix - Done;
+2. Implement methods to access specific card - TBD; 
+3. In this matrix, additional info that needs to be  - Done;
+present is whether the card is face up or face down.
+4. Create a display for a person's hand on the terminal. - TBD: correct spacing needs to be determined akin to the 15 puzzle. (we will get back to this later.)
+5. Implement discarded deck, cards that have passed by.
+Let's have a think about this.
+
+
+So far, we have (randomly) initialized the game.
+Now it is time to implement the game mechanics.
+
+Game Mechanics:
+
+When a player draws a cart he may want to keep it or discard it.
+To keep track of the discarded deck, we first need to process the 
+decision of the player.
+
+We need to keep track of whose player's turn is it.
+At some point, before the game begins we ask how many players there are.
+We instantiate each player and keep looping around until a critical condition is met,
+i.e. when some player has all cards revealed, at which point one last turn remains 
+for the other players, after which the scores are tallied up and the winner is declared.
+
+The column rule - if you collect three cards of identical values in a column, you must 
+"discard" that column, i.e. for practical purposes each entry in the column is replaced by 0.
+This applies to negative values as well, so a column of three minus one cards will again 
+reduce to a column of zeros.
+
+More things to think about:
+
+Supposing that the face down deck is emptied out, the game continues by 
+shuffling the discarded deck (face up), placing it face down, 
+and reusing it as the face down deck. This will eventually need to be implemented.
+
+All players should have access to the information that are available in the board game, 
+i.e. they can see the hands of other players, as well as the discarded deck (For example,
+you might decide to gather a column of 12's later in the game; 
+the knowledge of how many 12's have passed around will influence this decision - interestingly,
+this is slightly harder to do in the actual board game, as going through the discarded deck
+is frowned upon by the other players).
+
+
+Game termination:
+
+After a player turn ends, we need to check if the end condition is met, i.e. whether 
+his entire hand is face up. If this is the case, the game terminates the next time the 
+player pointer is pointed to him, and the winner is declared.
+ 
+
+
+
